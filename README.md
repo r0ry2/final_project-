@@ -1,6 +1,20 @@
 DevOps
 Installation & Setup
 ___
+# My Docker Project
+This project demonstrates running multiple databases in Docker.
+
+![Docker Hello World](images/hello-docker.png)
+
+## Steps
+1. Install Docker
+2. Run Hello World
+3. Run PostgreSQL container
+4. Run Cassandra container
+5. Run MongoDB container
+6. Connect databases with Jupyter
+7. Document everything on GitHub
+
 What is required of us in the project is to install the tools (Kafka, Cassandra, PostgreSQL, Anaconda, Docker, InfluxDB) inside Docker and make sure that they work together (Installation & Setup) only, not to build a complete system or programming 
 
 Our goels :
