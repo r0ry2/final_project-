@@ -1,8 +1,45 @@
 DevOps
 Installation & Setup
 ___
-# My Docker Project
-This project demonstrates running multiple databases in Docker.
+1. Docker 
+🐳 What is Docker?
+Docker is an open source platform that helps you run any application inside a lightweight, isolated box called a container.
+
+🔹 The idea:
+Instead of installing software (database, libraries, tools) directly on your device and encountering problems (for example, some libraries work for you but not for me), Docker puts everything ready and integrated inside its own container.
+
+📦 What is a container?
+A container is a lightweight, isolated environment in which an application runs with everything it needs (code, libraries).
+The container uses the underlying kernel but remains isolated from other containers.
+You can think of it as a small box containing your application and all its tools.
+
+🎯The main goal of Container is to learn how to run a small web application inside a container without having to install any server on your machine.
+
+🎯 Why we use Docker?
+Solving compatibility issues: The application works the same way for everyone.
+1- Portability: The same container runs on Windows, Mac, or Linux.
+2- Speed: Containers are lightweight and launch in seconds.
+3- Isolation: Each application is isolated from the others.
+4- Scalability: You can easily run thousands of containers.
+
+
+2. Docker Compose & YAML
+What is Docker Compose?
+🔹 Docker Compose is a tool that lets you easily manage multiple containers at the same time.
+🔹 Instead of running each container with lengthy commands in the terminal, you write a single YAML file that specifies:
+- Which images to use.
+- Container names.
+- Ports.
+- Passwords.
+- The network between them.
+📌 Result:
+Turns everyone on with one command:
+docker-compose up -d
+
+What is the docker-compose.yaml file?
+🔹 It's a YAML file (space-delimited, no parentheses).
+🔹 It defines each container and its details.
+📌 Example: If you have three databases (Postgres, MySQL, MongoDB), you would write them in a single file.
 
 ![Docker Hello World](images/hello-docker.png)
 
@@ -69,3 +106,6 @@ docker-compose up -d
 - InfluxDB: Open http://localhost:8086 in a browser.
 - Anaconda: Enter the terminal → docker exec -it <container_id> bash and try conda --version.
 
+
+
+![Database](images/postgres.jpg)
