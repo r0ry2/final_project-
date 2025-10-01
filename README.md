@@ -30,7 +30,8 @@ The container itself runs on Windows, Mac, or Linux.
 - Efficiency: Your machine can handle up to 50 containers.
 
 ## docker run hello-world
-![hello_docker](images/Docker Desktop hello.jpg)
+
+![hello_docker](images/hello-docker.png)
 
  ___
 2. docker-compose.yaml
