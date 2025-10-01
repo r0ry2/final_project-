@@ -1,14 +1,73 @@
 DevOps
 Installation & Setup
+
 ___
 1. Docker 
 🐳 What is Docker?
 Docker is an open source platform that helps you run any application inside a lightweight, isolated box called a container.
+It's a tool that allows you to run programs or databases within containers.
 
 🔹 The idea:
 Instead of installing software (database, libraries, tools) directly on your device and encountering problems (for example, some libraries work for you but not for me), Docker puts everything ready and integrated inside its own container.
 
+That means:
+No more "works on my machine" issues.
+You can run the same environment anywhere.
+
+🎯 Why we use Docker?
+
+Solve compatibility issues: The application works the same way for everyone.
+
+- Portability: Run applications on any device.
+The container itself runs on Windows, Mac, or Linux.
+
+- Speed: Containers are lightweight and launch in seconds.
+
+- Isolation: Each application is isolated from the others.
+
+- Scalability: You can easily run thousands of containers.
+
+- Efficiency: Your machine can handle up to 50 containers.
+
+## docker run hello-world
+![hello_docker](images/Docker Desktop hello.jpg)
+
+ ___
+2. docker-compose.yaml
+
+🔹 What is Docker Compose?
+Docker Compose is a tool that allows you to run multiple containers simultaneously using a single file called docker-compose.yaml.
+Instead of running each database or service with lengthy commands, you write them all in a single YAML file(docker-compose.yaml):
+
+Benefit: I don't need to manually operate each database.
+
+## docker compose 
+![dockerfile-compose](images/docker-compose.png)
+
+What did i do?
+We wrote a file named docker-compose.yaml containing definitions for three databases:
+- PostgreSQL
+- Cassandra
+- InfluxDB
+
+Inside the file, we wrote for each database:
+- The container name
+- The port (so we could access it from outside)
+- The username and password (to secure the connection)___
+
+docker-compose up -d
+
+![Running](images/Running.jpg)
+
+
+Docker Compose = container management.
+docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+
+![docker-Desktop](images/Docker.png)
+
+
 📦 What is a container?
+docker.container → Containers in which you run services (e.g., a PostgreSQL or MySQL database). 
 A container is a lightweight, isolated environment in which an application runs with everything it needs (code, libraries).
 The container uses the underlying kernel but remains isolated from other containers.
 You can think of it as a small box containing your application and all its tools.
