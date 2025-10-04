@@ -178,4 +178,3 @@ docker run -d --name influxdb -p 8086:8086 influxdb
 
 
 
-![InfluxDB_interface](images/InfluxDB.jpg)
