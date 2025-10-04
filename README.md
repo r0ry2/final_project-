@@ -3,7 +3,7 @@ Installation & Setup
 
 ___
 1. Docker 
-🐳 What is Docker?
+## 🐳 What is Docker?
 
 Docker is an open source platform that helps you run any application inside a lightweight, isolated box called a container.
 It's a tool that allows you to run programs or databases within containers.
@@ -30,7 +30,7 @@ The container itself runs on Windows, Mac, or Linux.
 
 - Efficiency: Your machine can handle up to 50 containers.
 
-🐳 Steps to Install Docker 
+## 🐳 Steps to Install Docker 
 
 1. Download Docker Desktop
 We went to the official website and Download it
