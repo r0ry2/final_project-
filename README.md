@@ -57,7 +57,6 @@ What happened:
 
 ![hello_docker](images/hello-docker.png)
 
- ___
 Now you have a ready-made environment to run any database or application within Docker.
 You don't need to manually install PostgreSQL, Cassandra, or InfluxDB. Docker brings everything to you in a ready-made container.
 
