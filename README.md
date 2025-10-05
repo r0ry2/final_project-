@@ -75,7 +75,6 @@ It's different from a Virtual Machine (lighter, faster, uses the same kernel).
 🎯The main goal of Container is to learn how to run a small web application inside a container without having to install any server on your machine
 
 
-![📦 What is a container?](images/container.png)
 
 
 2. docker-compose.yaml
