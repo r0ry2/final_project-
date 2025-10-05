@@ -61,7 +61,7 @@ Now you have a ready-made environment to run any database or application within 
 You don't need to manually install PostgreSQL, Cassandra, or InfluxDB. Docker brings everything to you in a ready-made container.
 
 ___
-
+## container
 📦 What is a container?
 
 After they understand Docker, move on to explain the concept of a Container.
@@ -77,9 +77,9 @@ It's different from a Virtual Machine (lighter, faster, uses the same kernel).
 
 
 
-2. docker-compose.yaml
+## docker-compose.yaml
 
-🔹 What is Docker Compose?
+2. What is Docker Compose?
 Docker Compose is a tool that allows you to run multiple containers simultaneously using a single file called docker-compose.yaml.
 Instead of running each database or service with lengthy commands, you write them all in a single YAML file(docker-compose.yaml):
 
