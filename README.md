@@ -61,23 +61,6 @@ What happened:
 Now you have a ready-made environment to run any database or application within Docker.
 You don't need to manually install PostgreSQL, Cassandra, or InfluxDB. Docker brings everything to you in a ready-made container.
 
-Real-life example :
-In the Web Development course, we built a website project 
-This website requires:
-A backend (Flask (Python)) to process orders.
-A database (MySQL) to store user and product data.
-
-The Teacher Anas asked us to work on the final project as a group so We need to install Python and Flask manually on each machine.
-We encounter version issues (Flask 2.0 works for us, but our colleague needs 1.1).
-We need to redo everything.
-
-but After (using Docker & Docker Compose):
-We've placed the Flask application and MySQL database inside containers.
-Now we can run the website and easily transfer it to my friend's machine without any problems.
- with just one command:
-## docker-compose up##
-
-
 ___
 
 📦 What is a container?
