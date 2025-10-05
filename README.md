@@ -33,18 +33,20 @@ The container itself runs on Windows, Mac, or Linux.
 ## 🐳 Steps to Install Docker 
 
 1. Download Docker Desktop
-We went to the official website and Download it
+Download Docker Desktop from Docker website.
 After downloading,we ran the installation file.
-2. Run Docker Desktop
-After installation, we opened the Docker Desktop application.
-If everything is fine, you'll see a running whale icon 🐳 .
-3. Verify that Docker is running
+2. Verify that Docker is running
 We opened Terminal and typed:
 docker --version
 If you see the Docker version : the installation was successful.
+3. Run Docker Desktop
+After installation, we opened the Docker Desktop application.
+If everything is fine, you'll see a running whale icon 🐳 .
 4. Test the first container
 We typed:
-## docker run hello-world
+
+docker run hello-world
+
 
 What happened:
 - Docker communicated with the Daemon.
@@ -177,4 +179,6 @@ docker run -d --name influxdb -p 8086:8086 influxdb
 ![InfluxDB_interface](images/InfluxDB.jpg)
 
 
+
+![postgres](images/postgres.jpg)
 
