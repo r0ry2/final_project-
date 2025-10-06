@@ -125,9 +125,9 @@ Each is independent and serves a different type of data:
 
 
 🔗relationships between th server :
-![services](images/Diagram.jpg)
 ![services](images/digram.jpg)
 
+![services](images/Diagram.jpg)
 
 
 The image depicts a trading system consisting of several services. Each service runs within its own container.
