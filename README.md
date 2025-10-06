@@ -125,6 +125,24 @@ simulation of a Trading System consists of multiple services:
 relationships between th server :
 ![services](images/Diagram.jpg)
 
+The image depicts a trading system consisting of several services. Each service runs within its own container.
+
+Services:
+
+- Kafka ← Depends on ← Zookeeper
+Kafka needs Zookeeper to organize brokers.
+Kafka → Databases: Kafka streams incoming data into database 
+
+Databases (Cassandra, Postgres, InfluxDB)
+Each is independent and serves a different type of data:
+Cassandra = large distributed data.
+Postgres = structured data (Users, Orders).
+InfluxDB = time-series data.
+
+Anaconda
+Connects to all databases (Cassandra + Postgres + InfluxDB) and uses Kafka for Streaming Data.
+It is the interface through which we write code and analyze data.
+
 
 ## Step 2: Create a Project Folder
 ## docker-compose.yaml
