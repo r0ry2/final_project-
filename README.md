@@ -52,8 +52,7 @@ The container itself runs on Windows, Mac, or Linux.
 
 ## 🐳 Steps to Install Docker 
 
-1. Download Docker Desktop
-Download Docker Desktop from Docker website.
+1. Download Docker Desktop from Docker website.
 After downloading,we ran the installation file.
 2. Verify that Docker is running
 We opened Terminal and typed:
