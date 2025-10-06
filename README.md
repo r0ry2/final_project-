@@ -2,6 +2,25 @@ DevOps
 Installation & Setup
 
 ___
+
+Development Operations: DevOps is a workflow approach that combines software development and IT operations, with the goal of delivering software faster, more reliably, and more consistently through automation. 
+
+Automation is about making everything work with minimal human interaction in these types of processes:
+- testing
+- deployment
+- monitoring
+- code integration.
+
+🔹 The basic idea of ​​DevOps:
+It is to remove barriers between the development team and the operations team so that they work as one team.
+
+We use tools that help us integrate, such as:
+- Docker 🐳
+- Kubernetes 
+- Jenkins 
+- Git 
+
+
 1. Docker 
 ## 🐳 What is Docker?
 

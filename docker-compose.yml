@@ -8,6 +8,8 @@ services:
       ZOOKEEPER_TICK_TIME: 2000
     ports:
       - "2181:2181"
+    volumes:
+      - zookeeper_data:/var/lib/zookeeper
 
   kafka:
     image: confluentinc/cp-kafka:7.5.0
@@ -20,11 +22,15 @@ services:
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    volumes:
+      - kafka_data:/var/lib/kafka/data
 
   cassandra:
     image: cassandra:4.0
     ports:
       - "9042:9042"
+    volumes:
+      - cassandra_data:/var/lib/cassandra
 
   postgres:
     image: postgres:13
@@ -33,13 +39,31 @@ services:
       POSTGRES_PASSWORD: admin
     ports:
       - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
 
   influxdb:
     image: influxdb:2.7
     ports:
       - "8086:8086"
+    volumes:
+      - influxdb_data:/var/lib/influxdb2
 
   anaconda:
     image: continuumio/anaconda3:2022.05
     tty: true
     stdin_open: true
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/opt/notebooks
+    command: >
+      bash -c "jupyter notebook --notebook-dir=/opt/notebooks
+      --ip=0.0.0.0 --port=8888 --no-browser --allow-root"
+
+volumes:
+  zookeeper_data:
+  kafka_data:
+  cassandra_data:
+  postgres_data:
+  influxdb_data:
