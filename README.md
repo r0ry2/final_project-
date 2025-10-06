@@ -50,7 +50,10 @@ The container itself runs on Windows, Mac, or Linux.
 
 - Efficiency: Your machine can handle up to 50 containers.
 
-## 🐳 Steps to Install Docker 
+## Project work steps :
+
+## Step 1:Preparing the work environment
+🐳 Steps to Install Docker 
 
 1. Download Docker Desktop from Docker website.
 After downloading,we ran the installation file.
@@ -80,11 +83,9 @@ What happened:
 ![hello_docker](images/hello-docker.png)
 
 Now you have a ready-made environment to run any database or application within Docker.
-You don't need to manually install PostgreSQL, Cassandra, or InfluxDB. Docker brings everything to you in a ready-made container.
-
 ___
 ## container
-2. 📦 What is a container?
+3. 📦 What is a container?
 
 After they understand Docker, move on to explain the concept of a Container.
 
@@ -97,11 +98,9 @@ It's different from a Virtual Machine (lighter, faster, uses the same kernel).
 🎯The main goal of Container is to learn how to run a small web application inside a container without having to install any server on your machine
 
 
-
-
 ## docker compose 
 
-3. What is Docker Compose?
+4. What is Docker Compose?
 
 Docker Compose is a tool that allows you to run multiple containers simultaneously using a single file called docker-compose.yaml.
 Instead of running each database or service with lengthy commands, you write them all in a single YAML file(docker-compose.yaml):
@@ -121,6 +120,8 @@ simulation of a Trading System consists of multiple services:
 relationships between th server :
 ![services](images/Diagram.jpg)
 
+
+## Step 2: Create a Project Folder
 ## docker-compose.yaml
 ![dockerfile-compose](images/docker-compose.png)
 
