@@ -3,7 +3,8 @@ Installation & Setup
 
 ___
 
-Development Operations: DevOps is a workflow approach that combines software development and IT operations, with the goal of delivering software faster, more reliably, and more consistently through automation. 
+1. DevOps( Development Operation): 
+is a workflow approach that combines software development and IT operations, with the goal of delivering software faster, more reliably, and more consistently through automation. 
 
 Automation is about making everything work with minimal human interaction in these types of processes:
 - testing
@@ -21,7 +22,7 @@ We use tools that help us integrate, such as:
 - Git 
 
 
-1. Docker 
+2. Docker 
 ## 🐳 What is Docker?
 
 Docker is an open source platform that helps you run any application inside a lightweight, isolated box called a container.
@@ -96,7 +97,7 @@ It's different from a Virtual Machine (lighter, faster, uses the same kernel).
 
 
 
-## docker-compose.yaml
+## docker compose 
 
 3. What is Docker Compose?
 
@@ -106,7 +107,19 @@ Instead of running each database or service with lengthy commands, you write the
 Benefit: I don't need to manually operate each database.
 Docker Compose = container management.
 
-## docker compose 
+
+(System Components)
+
+simulation of a Trading System consists of multiple services:
+- Zookeeper + Kafka 
+- 3 Databases 
+- Anaconda.
+- Docker Compose
+
+relationships between th server :
+![services](images/Diagram.jpg)
+
+## docker-compose.yaml
 ![dockerfile-compose](images/docker-compose.png)
 
 What did i do?
