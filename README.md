@@ -56,7 +56,9 @@ The container itself runs on Windows, Mac, or Linux.
 After downloading,we ran the installation file.
 2. Verify that Docker is running
 We opened Terminal and typed:
+
 docker --version
+
 If you see the Docker version : the installation was successful.
 3. Run Docker Desktop
 After installation, we opened the Docker Desktop application.
