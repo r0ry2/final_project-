@@ -60,6 +60,7 @@ We opened Terminal and typed:
 docker --version
 
 If you see the Docker version : the installation was successful.
+
 3. Run Docker Desktop
 After installation, we opened the Docker Desktop application.
 If everything is fine, you'll see a running whale icon 🐳 .
