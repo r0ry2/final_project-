@@ -71,7 +71,7 @@ docker run hello-world
 
 
 What happened:
-- Docker communicated with the Daemon.
+- Docker communicated with the Server.
 - Downloaded an image named hello-world from Docker Hub.
 - Run a small container and printed a message:
 
