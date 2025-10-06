@@ -124,7 +124,7 @@ Each is independent and serves a different type of data:
 - InfluxDB Time-Series database for storing real-time data (e.g., currency prices every second).
 
 
-relationships between th server :
+🔗relationships between th server :
 ![services](images/Diagram.jpg)
 
 The image depicts a trading system consisting of several services. Each service runs within its own container.
@@ -141,7 +141,7 @@ It is the interface through which we write code and analyze data.
 
 
 ## Step 2: Create a Project Folder
-## docker-compose.yaml
+##  Create the docker-compose.yml Filed
 ![dockerfile-compose](images/docker-compose.png)
 
 What did i do?
@@ -156,52 +156,77 @@ In addition.
 Inside the file, we wrote for each database:
 - The container name
 - The port (so we could access it from outside)
-- The username and password (to secure the connection)___
+- The username and password (to secure the connection)
+___
+witre the comende :
 
 docker-compose up -d
 
 Docker will:
-Download images (ready-made software) from the internet.
-Create containers for each tool.
-Connect them together (like a small network between them).
-Open ports for you so you can access them from your device.
+- Download images (ready-made software) from the internet.
+- Create containers for each tool.
+- Connect them together (like a small network between them).
+- Open ports for you so you can access them from your device.
+
+![docker_ps](images/docker_ps.jpg)
 
 
+## Step 3:Verify Everything is Running
 
-The tools the doctor gave you:
+docker ps → This will list all running containers. 
 
-
-
-
-4. Verify Everything is Running
-
-docker ps → This will list all running containers. You should see zookeeper, kafka, cassandra, postgres, influxdb, anaconda.
 ![Running](images/Running.jpg)
 
 
-
-![docker_ps](images/docker ps.jpg)
-
+## Step 4: Access Each Service
 
 
-![docker-Desktop](images/Docker.png)
+![docker-Desktop](images/Docker.jpg)
 
 
+kafka: docker exec -it trading-tools-docker-kafka-1 bash
+![postgresDB](images/postgresDB.jpg)
 
-Postgres: SQL database.
-Environment: Login settings:
-User: admin
-Password: admin
-Database name: tradingdb
+postgresDB: docker exec -it trading-tools-docker-postgres-1 psql -U admin
+![postgresDB](images/postgresDB.jpg)
 
+cassandra: docker exec -it trading-tools-docker-cassandra-1 cqlsh
+![postgresDB](images/postgresDB.jpg)
 
-![Setup.InfluxDB](images/Setup.jpg)
-docker run -d --name influxdb -p 8086:8086 influxdb
-
+nfluxDB: Open your browser at http://localhost:8086 Login: admin / passeword :rema2002
+![Setup](images/Setup.jpg)
 
 ![InfluxDB_interface](images/InfluxDB.jpg)
 
 
+Anaconda / Jupyter :Anaconda is running as a Jupyter server on port :http://localhost:8888
+![jupyter](images/jupyter.jpg)
+![token](images/token.jpg)
+![jupyter_interfase](images/jupyter_interfase.jpg)
 
+
+## Step 5: Access Each Service
+![postgres](images/check.jpg)
 ![postgres](images/postgres.jpg)
+
+postgres:
+![postgres](images/postgres.jpg)
+cassandra:
+![cassandra](images/cassandra.jpg)
+Influx:
+From inside Anaconda (Python code)
+![Influx](images/InfluxDBClient.jpg)
+![Influx](images/API_token.jpg)
+ 
+## Step 6: Volumes
+In Docker, when you stop a container (the temporary application running Docker), all the data inside it is erased unless you store it somewhere permanent.
+
+That's why we use something called Volumes, which is persistent storage that persists even if the container is stopped or deleted.
+![volume](images/volume.jpg)
+
+docker volume ls
+This command displays all volumes currently present in the system.
+
+![jupyter_interfase](images/docker_volume.jpg)
+
 
