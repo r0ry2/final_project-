@@ -114,10 +114,12 @@ Docker Compose = container management.
 simulation of a Trading System consists of multiple services:
 - Zookeeper: A core program that Kafka needs to run (it manages the brokers).
 - Docker Compose → The foundation, which is the container in which we run everything.
-- Kafka → A streaming system Responsible for receiving data in real-time (Streaming).
+- Kafka → A streaming system Responsible for receiving data .
 - Anaconda → A Python programming environment (which can be used inside a container).
-3 Databases 
-- Cassandra (SQL) → A distributed powerful NoSQL database for massive storage.
+
+Each is independent and serves a different type of data: 
+
+- Cassandra (SQL) → A distributed powerful NoSQL database for storage.
 - PostgreSQL → A traditional SQL database.
 - InfluxDB Time-Series database for storing real-time data (e.g., currency prices every second).
 
@@ -131,16 +133,10 @@ Services:
 
 - Kafka ← Depends on ← Zookeeper
 Kafka needs Zookeeper to organize brokers.
-Kafka → Databases: Kafka streams incoming data into database 
+Kafka → Databases: Kafka streams incoming data into Databases (Cassandra, Postgres, InfluxDB)
 
-Databases (Cassandra, Postgres, InfluxDB)
-Each is independent and serves a different type of data:
-Cassandra = large distributed data.
-Postgres = structured data (Users, Orders).
-InfluxDB = time-series data.
-
-Anaconda
-Connects to all databases (Cassandra + Postgres + InfluxDB) and uses Kafka for Streaming Data.
+Anaconda ↔ Kafka & Databases
+anaconda Connects to all databases (Cassandra + Postgres + InfluxDB) and uses Kafka for Streaming Data.
 It is the interface through which we write code and analyze data.
 
 
