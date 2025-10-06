@@ -112,10 +112,15 @@ Docker Compose = container management.
 (System Components)
 
 simulation of a Trading System consists of multiple services:
-- Zookeeper + Kafka 
-- 3 Databases 
-- Anaconda.
-- Docker Compose
+- Zookeeper: A core program that Kafka needs to run (it manages the brokers).
+- Docker Compose → The foundation, which is the container in which we run everything.
+- Kafka → A streaming system Responsible for receiving data in real-time (Streaming).
+- Anaconda → A Python programming environment (which can be used inside a container).
+3 Databases 
+- Cassandra (SQL) → A distributed powerful NoSQL database for massive storage.
+- PostgreSQL → A traditional SQL database.
+- InfluxDB Time-Series database for storing real-time data (e.g., currency prices every second).
+
 
 relationships between th server :
 ![services](images/Diagram.jpg)
@@ -126,7 +131,7 @@ relationships between th server :
 ![dockerfile-compose](images/docker-compose.png)
 
 What did i do?
-We wrote a file named docker-compose.yaml containing definitions for three databases:
+i wrote a file named docker-compose.yaml containing definitions for three databases:
 - PostgreSQL
 - Cassandra
 - InfluxDB
@@ -147,23 +152,10 @@ Create containers for each tool.
 Connect them together (like a small network between them).
 Open ports for you so you can access them from your device.
 
-First things first: What does an image mean in Docker?
 
-An image is like a ready-made version of a specific program.
-For example, instead of manually installing PostgreSQL and configuring its settings, some people have created a ready-made version called a Postgres image.
-When you use it, Docker downloads the program from the internet and runs it immediately(Docker Hub).
-
-Without this code: You'd have to manually install Kafka, configure Zookeeper, download and configure Postgres, and repeat the same process for each tool. This is very tedious.
 
 The tools the doctor gave you:
 
-- Docker → The foundation, which is the container in which we run everything.
-- Kafka → A streaming system Responsible for receiving data in real-time (Streaming).
-- Zookeeper: A core program that Kafka needs to run (it manages the brokers).
-- Cassandra (SQL) → A distributed powerful NoSQL database for massive storage.
-- PostgreSQL → A traditional SQL database.
-- Anaconda → A Python programming environment (which can be used inside a container).
-- InfluxDB Time-Series database for storing real-time data (e.g., currency prices every second).
 
 
 
