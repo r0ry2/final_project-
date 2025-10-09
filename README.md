@@ -56,6 +56,9 @@ The container itself runs on Windows, Mac, or Linux.
 🐳 Steps to Install Docker 
 
 1. Download Docker Desktop from Docker website.
+## Live Demo
+[Visit the website here](https://www.docker.com/products/docker-desktop/)
+
 After downloading,we ran the installation file.
 2. Verify that Docker is Download
 We opened Terminal and typed:
@@ -161,9 +164,12 @@ Inside the file, we wrote for each database:
 - The port (so we could access it from outside)
 - The username and password (to secure the connection)
 ___
+## Step 3:Verify Everything is Running
+
 witre the comende :
 
 docker-compose up -d
+![Running](images/Running.jpg)
 
 Docker will:
 - Download images (ready-made software) from the internet.
@@ -171,14 +177,10 @@ Docker will:
 - Connect them together (like a small network between them).
 - Open ports for you so you can access them from your device.
 
+docker pc : Displays only containers that are currently running.
 ![docker_ps](images/docker_ps.jpg)
 
 
-## Step 3:Verify Everything is Running
-
-docker ps → This will list all running containers. 
-
-![Running](images/Running.jpg)
 
 
 ## Step 4: Access Each Service
@@ -208,7 +210,18 @@ Anaconda / Jupyter :Anaconda is running as a Jupyter server on port :http://loca
 ![jupyter_interfase](images/jupyter_interfase.jpg)
 
 
-## Step 5: Access Each Service
+## Step 5: How database connect with Anconda 
+
+![Anaconda](images/Anaconda.jpg)
+
+Activate the virtual environment
+conda activate cassandra_env
+
+Install the library to communicate with :
+- psycopg2
+- cassandra-driver
+- influxdb-client
+
 ![postgres](images/check.jpg)
 ![postgres](images/postgres.jpg)
 
