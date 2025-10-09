@@ -85,12 +85,13 @@ What happened:
 ![hello_docker](images/hello-docker.png)
 
 Now you have a ready-made environment to run any database or application within Docker.
+
+After we understand Docker, move on to explain the concept of a Container.
+
 ___
+
 ## container
 3. 📦 What is a container?
-
-After they understand Docker, move on to explain the concept of a Container.
-
 A container is a lightweight, isolated environment in which an application runs with everything it needs (code, libraries).
 The container uses the underlying kernel but remains isolated from other containers.
 
