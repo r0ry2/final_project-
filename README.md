@@ -188,13 +188,15 @@ docker pc : Displays only containers that are currently running.
 
 
 kafka: docker exec -it trading-tools-docker-kafka-1 bash
-![postgresDB](images/postgresDB.jpg)
+For example:
+An application sends currency rates → Kafka → stores them in InfluxDB and PostgreSQL.
+![kafka](images/kafka.jpg)
 
 postgresDB: docker exec -it trading-tools-docker-postgres-1 psql -U admin
 ![postgresDB](images/postgresDB.jpg)
 
 cassandra: docker exec -it trading-tools-docker-cassandra-1 cqlsh
-![postgresDB](images/postgresDB.jpg)
+![cassandraDB](images/cassandraDB.jpg)
 
 nfluxDB: Open your browser at http://localhost:8086 Login: admin / passeword :rema2002
 ![Setup](images/Setup.jpg)
