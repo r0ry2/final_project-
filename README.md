@@ -57,8 +57,6 @@ The container itself runs on Windows, Mac, or Linux.
 
 1. Download Docker Desktop from [docker-desktop](https://www.docker.com/products/docker-desktop/).
 
-After downloading,we ran the installation file.
-
 2. Verify that Docker is Download
 We opened Terminal and typed:
 
@@ -85,8 +83,6 @@ What happened:
 ![hello_docker](images/hello-docker.png)
 
 Now you have a ready-made environment to run any database or application within Docker.
-
-After we understand Docker, move on to explain the concept of a Container.
 
 ___
 
@@ -138,7 +134,9 @@ The image depicts a trading system consisting of several services. Each service 
 Services:
 
 - Kafka ← Depends on ← Zookeeper
+
 Kafka needs Zookeeper to organize brokers.
+
 Kafka → Databases: Kafka streams incoming data into Databases (Cassandra, Postgres, InfluxDB)
 
 Anaconda ↔ Kafka & Databases
