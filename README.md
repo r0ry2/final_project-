@@ -222,8 +222,6 @@ Install the library to communicate with :
 - cassandra-driver
 - influxdb-client
 
-![check](images/check.jpg)
-![postgres](images/postgres.jpg)
 
 postgres:
 ![postgres](images/postgres.jpg)
@@ -233,6 +231,9 @@ Influx:
 From inside Anaconda (Python code)
 ![Influx](images/InfluxDBClient.jpg)
 ![Influx](images/API_token.jpg)
+
+![check](images/check.jpg)
+
  
 ## Step 6: Volumes
 In Docker, when you stop a container (the temporary application running Docker), all the data inside it is erased unless you store it somewhere permanent.
