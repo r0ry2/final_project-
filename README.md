@@ -206,6 +206,9 @@ nfluxDB: Open your browser at http://localhost:8086 Login: admin / passeword :re
 
 Anaconda / Jupyter :Anaconda is running as a Jupyter server on port :http://localhost:8888
 ![jupyter](images/jupyter.jpg)
+
+docker logs trading-tools-docker-anaconda-1
+
 ![token](images/token.jpg)
 ![jupyter_interfase](images/jupyter_interfase.jpg)
 
