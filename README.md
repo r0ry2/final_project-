@@ -222,7 +222,7 @@ Install the library to communicate with :
 - cassandra-driver
 - influxdb-client
 
-![postgres](images/check.jpg)
+![check](images/check.jpg)
 ![postgres](images/postgres.jpg)
 
 postgres:
