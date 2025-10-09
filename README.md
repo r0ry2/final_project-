@@ -58,6 +58,7 @@ The container itself runs on Windows, Mac, or Linux.
 1. Download Docker Desktop from [docker-desktop](https://www.docker.com/products/docker-desktop/).
 
 After downloading,we ran the installation file.
+
 2. Verify that Docker is Download
 We opened Terminal and typed:
 
