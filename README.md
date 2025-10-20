@@ -101,8 +101,7 @@ It's different from a Virtual Machine (lighter, faster, uses the same kernel).
 
 4. What is Docker Compose?
 
-Docker Compose is a tool that allows you to run multiple containers simultaneously using a single file called docker-compose.yaml.
-Instead of running each database or service with lengthy commands, you write them all in a single YAML file(docker-compose.yaml):
+Docker Compose is a tool that allows you to run multiple containers in the same time  using a single file called docker-compose.yaml. Instead of running each database or service with lengthy commands, you write them all in a single YAML file(docker-compose.yaml):
 
 Benefit: I don't need to manually operate each database.
 Docker Compose = container management.
